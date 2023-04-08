@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="bodyHomepage">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbarOverride">
+        <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" alt="RHU" class="overrideLogo"></a>
+
+        <button class="navbar-toggler overrideToggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="homepage.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle overrideNavItem" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Academics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="gpa.html">GPA</a>
+                        <a class="dropdown-item" href="studyplan.html">Study Plan</a>
+                        <a class="dropdown-item" href="courseregistration.html">Course Registration</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="files2.html">Files</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="gpaMainContainer">
+        <section>
+            <div id="gpaContaineridk">
+                <article id="gpaGrades" class="classicArticle">
+                    <h4>Your Grades:</h4>
+                    <select id="gpaGradeSelect" style="margin-bottom:20px;" onchange="doSomething();"
+                        onfocus="this.selectedIndex = -1;">
+                        <option id="gpaOne">Fall 2021-2022</option>
+                        <option id="gpaTwo">Spring 2021-2022</option>
+                        <option id="gpaThree">Summer 2021-2022</option>
+                        <option id="gpaFour">Fall 2022-2023</option>
+                        <option id="gpaFive">Spring 2022-2023</option>
+                    </select>
+                    <div class="gpaGradeTableContainer table-responsive" id="fall2021">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Course Title</th>
+                                    <th scope="col">Credits</th>
+                                    <th scope="col">Pass</th>
+                                    <th scope="col">Grade</th>
+                                    <th scope="col">Letter Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Introduction to Programming"
+                                        style="cursor:help;">COSC214</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>98.00</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top"
+                                        title="English Composition and Rhetoric" style="cursor:help;">ENGL210</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>84.00</td>
+                                    <td>B</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Calculus III"
+                                        style="cursor:help;">MATH111</td>
+                                    <td>4</td>
+                                    <td>Yes</td>
+                                    <td>100.00</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Logic Design"
+                                        style="cursor:help;">COSC351</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>98.00</td>
+                                    <td>A+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="gpaGradeTableGrades">
+                            <p><b>Term GPA: </b>95.38</p>
+                            <p><b>Cumulative GPA: </b>95.38</p>
+                        </div>
+                    </div>
+                    <div class="gpaGradeTableContainer hidden table-responsive" id="spring2022">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Course Title</th>
+                                    <th scope="col">Credits</th>
+                                    <th scope="col">Pass</th>
+                                    <th scope="col">Grade</th>
+                                    <th scope="col">Letter Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Database Management Systems"
+                                        style="cursor:help;">COSC231</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>98.00</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top"
+                                        title="Advanced Programming and Data Structures" style="cursor:help;">COSC215
+                                    </td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>93.00</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Logic Design Lab"
+                                        style="cursor:help;">COSC351L</td>
+                                    <td>1</td>
+                                    <td>Yes</td>
+                                    <td>95.00</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Introduction to Marketing"
+                                        style="cursor:help;">BMKT200</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>98.00</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Civilization Studies II"
+                                        style="cursor:help;">CVLN202</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>92.00</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Discrete Mathematics"
+                                        style="cursor:help;">MATH210</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>87.00</td>
+                                    <td>B+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="gpaGradeTableGrades">
+                            <p><b>Term GPA: </b>93.50</p>
+                            <p><b>Cumulative GPA: </b>94.34</p>
+                        </div>
+                    </div>
+                    <div class="gpaGradeTableContainer hidden table-responsive" id="summer2022">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Course Title</th>
+                                    <th scope="col">Credits</th>
+                                    <th scope="col">Pass</th>
+                                    <th scope="col">Grade</th>
+                                    <th scope="col">Letter Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Probability and Statistics"
+                                        style="cursor:help;">MATH315</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>95.00</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Environmental Chemistry"
+                                        style="cursor:help;">CHEM211</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>87.00</td>
+                                    <td>B+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="gpaGradeTableGrades">
+                            <p><b>Term GPA: </b>91.00</p>
+                            <p><b>Cumulative GPA: </b>93.77</p>
+                        </div>
+                    </div>
+                    <div class="gpaGradeTableContainer hidden table-responsive" id="fall2022">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Course Title</th>
+                                    <th scope="col">Credits</th>
+                                    <th scope="col">Pass</th>
+                                    <th scope="col">Grade</th>
+                                    <th scope="col">Letter Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top"
+                                        title="Design and Analysis of Algorithms" style="cursor:help;">COSC321</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>100.00</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top"
+                                        title="Professional English Communication" style="cursor:help;">ENGL217</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>91.00</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Computer Netowrks Lab I"
+                                        style="cursor:help;">COSC360L</td>
+                                    <td>1</td>
+                                    <td>Yes</td>
+                                    <td>100.00</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Computer Networks"
+                                        style="cursor:help;">COSC360</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>91.00</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Public Speaking"
+                                        style="cursor:help;">CMNS410</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>86.00</td>
+                                    <td>B+</td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top"
+                                        title="Mobile Application Development" style="cursor:help;">COSC431</td>
+                                    <td>3</td>
+                                    <td>Yes</td>
+                                    <td>100.00</td>
+                                    <td>A+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="gpaGradeTableGrades">
+                            <p><b>Term GPA: </b>95.38</p>
+                            <p><b>Cumulative GPA: </b>95.38</p>
+                        </div>
+                    </div>
+                    <div class="gpaGradeTableContainer hidden table-responsive" id="spring2023">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Course Title</th>
+                                    <th scope="col">Credits</th>
+                                    <th scope="col">Pass</th>
+                                    <th scope="col">Grade</th>
+                                    <th scope="col">Letter Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Web Programming"
+                                        style="cursor:help;">COSC333</td>
+                                    <td>3</td>
+                                    <td>N/A</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top"
+                                        title="Arabic Language and Communication" style="cursor:help;">ARAB212</td>
+                                    <td>2</td>
+                                    <td>N/A</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Linear Algebra"
+                                        style="cursor:help;">Math313</td>
+                                    <td>3</td>
+                                    <td>N/A</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Software Engineering"
+                                        style="cursor:help;">CCEE550</td>
+                                    <td>3</td>
+                                    <td>N/A</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td data-toggle="tooltip" data-placement="top" title="Intercultural Communication"
+                                        style="cursor:help;">SOCI310</td>
+                                    <td>3</td>
+                                    <td>N/A</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="gpaGradeTableGrades">
+                            <p><b>Term GPA: </b>91.00</p>
+                            <p><b>Cumulative GPA: </b>93.77</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="classicArticle" id="articleCalculator">
+                    <h4>Gpa Calculator</h4>
+
+                    <div class="gpaOneSemester">
+                        <div class="gpaSemesterHeader">
+                            <h3>Semester</h3>
+                            <div class="gpaSemesterHeaderControls">
+                                <button onclick="addSemester()">+</button>
+                                <button onclick="removeSemester(this)">X</button>
+                            </div>
+                        </div>
+                        <div class="gpaSemesterInputs">
+                            <div class="gpaSemesterInputsLine">
+                                <div class="gpaSemesterInputsLineOneObject">
+                                    <h5>Grade </h5>
+                                    <input type="number" name="" id="gpaInputGrade">
+                                </div>
+                                <div class="gpaSemesterInputsLineOneObject">
+                                    <h5>Credits </h5>
+                                    <input type="number" name="" id="gpaInputCredit">
+                                </div>
+                                <div class="gpaSemesterInputsLineControls">
+                                    <button onclick="addLine(this)" id="das">+</button>
+                                    <button onclick="removeLine(this)">X</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gpaSemesterFooter">
+                            <button onclick="calculateSemesterGPA(this)" id="gpaButtonDo">Calculate</button>
+                            <h5 class="gpaAnswer">00.00</h5>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <aside class="classicArticle" id="gpaAside">
+                <h4>RHU Grading System</h4>
+                <table>
+                    <tr>
+                        <th>Numeral Grade</th>
+                        <th>Letter Grade</th>
+                        <th>Grade Value</th>
+                    </tr>
+                    <tr>
+                        <td>&ge;95</td>
+                        <td>A+</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>&ge;90 and &lt;95</td>
+                        <td>A</td>
+                        <td>3.85</td>
+                    </tr>
+                    <tr>
+                        <td>&ge;85 and &lt;90</td>
+                        <td>B+</td>
+                        <td>3.75</td>
+                    </tr>
+                    <tr>
+                        <td>&ge;80 and &lt;85</td>
+                        <td>B</td>
+                        <td>3.40</td>
+                    </tr>
+                    <tr>
+                        <td>&ge;77 and &lt;80</td>
+                        <td>C+</td>
+                        <td>3.00</td>
+                    </tr>
+                    <tr>
+                        <td>&ge;73 and &lt;77</td>
+                        <td>C</td>
+                        <td>2.70</td>
+                    </tr>
+                    <tr>
+                        <td>&ge;70 and &lt;73</td>
+                        <td>C-</td>
+                        <td>2.35</td>
+                    </tr>
+                    <tr>
+                        <td>&ge;65 and &lt;70</td>
+                        <td>D+</td>
+                        <td>1.85</td>
+                    </tr>
+                    <tr>
+                        <td>&ge;60 and &lt;65</td>
+                        <td>D</td>
+                        <td>1.25</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;60</td>
+                        <td>F</td>
+                        <td>Zero</td>
+                    </tr>
+                </table>
+            </aside>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>Rafik Hariri University &copy2023 All rights reserved </p>
+        <div id="footerSocials">
+            <p>Follow Us On</p>
+            <div>
+                <a href="https://www.linkedin.com/school/rafik-hariri-university/" target="_blank"><img
+                        src="images/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/rhu.lebanon/" target="_blank"><img src="images/instagram.png"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

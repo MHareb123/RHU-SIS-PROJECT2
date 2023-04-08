@@ -1,0 +1,461 @@
+/*
+Theme Name: Haigazian Academics
+Description: Haigazian Academics Theme Develop By Prakash.
+Version: 1
+Author: Haigazian Academics
+Author URI: https://haigazian.wpengine.com/
+
+Tags: Responsive Layout, HTML5/CSS3/Responsive, Slider, widgets
+*/
+
+/*css imports*/
+@import url("bootstrap.min.css");
+@import url("font-awesome.min.css");
+@import url("owl.carousel.min.css");
+@import url("jquery.fancybox.min.css");
+@import url("animate.css");
+@import url("fonts.css");
+@import url("style_1.css");
+@import url("responsive.css");
+
+.video-box {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.video-box iframe,
+.video-box object,
+.video-box embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.alignright {
+  margin: 0 0 10px 15px;
+  display: inline;
+}
+
+img.alignleft {
+  margin: 0 15px 10px 0;
+  display: inline;
+}
+
+.alignright {
+  float: right;
+}
+.alignleft {
+  float: left;
+}
+.wpb_content_element.top-div {
+  margin: 0;
+}
+
+.em-calendar.fullcalendar {
+  width: 100%;
+  font-size: 14px;
+}
+.em-calendar .days-names,
+.em-calendar .month_name {
+  color: #000;
+}
+table.em-calendar td {
+  padding: 10px 5px;
+  max-width: 100px;
+  min-width: 100px;
+}
+table.em-calendar td ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+table.em-calendar td.eventful a,
+table.em-calendar td.eventful-today a {
+  color: #4179ba;
+}
+table.em-calendar td.eventless-today,
+table.em-calendar td.eventful-today {
+  background-color: #ec7946;
+  color: #fff !important;
+  font-weight: 700;
+}
+table.em-calendar td.eventless-today a,
+table.em-calendar td.eventful-today a {
+  color: #fff !important;
+}
+
+.my-dropdown {
+  right: 0;
+  width: 250px;
+  left: inherit;
+  padding: 0;
+}
+.my-dropdown li {
+  margin: 0;
+  text-transform: capitalize;
+  display: block;
+  font-size: 14px;
+}
+.my-dropdown li a {
+  padding: 8px 10px;
+}
+.my-dropdown li:hover a {
+  background-color: #4179ba;
+  color: #fff;
+}
+.banner-info-wrap a {
+  display: block;
+}
+.banner-info-wrap img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.banner-info-wrap a:hover img {
+  opacity: 0.5;
+}
+
+.photo-gallery.about-wrap {
+  padding: 50px 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-align: left;
+}
+.hide-images img {
+  display: none !important;
+}
+.news-announcements .news-row p a {
+  display: none;
+}
+.wpcf7-form-control-wrap {
+  display: block;
+}
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+  left: 0;
+  top: 50%;
+}
+
+table {
+  border: none;
+}
+table td {
+  border: none !important;
+  border-bottom: 1px solid #c0c0c0 !important;
+  color: #4a74b5 !important;
+  padding: 20px 10px !important;
+}
+table tr:first-child td {
+  font-weight: 700;
+}
+table tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+.site-map-page h2 {
+  display: none;
+}
+
+.online-database-shorting {
+  margin-bottom: 50px;
+}
+.database-menu-list {
+  position: relative;
+}
+.database-menu-list span {
+  display: block;
+  padding: 10px 20px 10px 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+}
+.database-menu-list span:after {
+  font-family: FontAwesome;
+  content: "\f0d7";
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+.database-menu-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+  display: none;
+  height: 300px;
+  overflow-x: hidden;
+}
+.database-menu-list ul li {
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid #dfdfdf;
+  cursor: pointer;
+}
+.database-menu-list ul li:hover {
+  background-color: #3e76b4;
+  color: #fff;
+}
+.database-menu-list ul li:last-child {
+  border: none;
+}
+
+.online-data-list {
+  margin-top: 25px;
+  display: none;
+  width: 100%;
+}
+.online-data-list h3 {
+  font-size: 20px;
+}
+.online-data-list h3 span {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.online-data-copy {
+  display: none;
+}
+.online-data-list.in .online-data-copy {
+  display: block;
+}
+
+.directories span {
+  display: none;
+}
+.directories span.in {
+  display: block;
+}
+
+.campus-map {
+  background-color: transparent;
+}
+
+#photo-container .item a {
+  display: none;
+}
+#photo-container .item a:first-child {
+  display: block;
+}
+#photo-container .item h3 {
+  font-size: 18px;
+  text-align: left;
+  padding-top: 15px;
+}
+
+/*.site-map-page ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.site-map-page li{
+    width: 48%;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+.site-map-page li li{
+    float: none;
+    width: 100%;
+    margin: 0 0 5px;
+}
+.site-map-page ul ul{
+    padding: 10px 0 0;
+    display: block;
+}*/
+
+.site-map-page ul {
+  margin: 0;
+  padding: 0 5px;
+  text-align: center;
+  display: inline-block;
+}
+.site-map-page ul li {
+  display: inline-block;
+  margin: 0 10px 20px;
+}
+.site-map-page ul li a {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.site-map-page ul li li a {
+  margin-bottom: 0;
+}
+.site-map-page ul li li {
+  margin-bottom: 10px;
+}
+
+.site-map-page ul > li.page_item_has_children > a {
+  font-weight: 700;
+  font-size: 18px;
+}
+.site-map-page ul > li.page_item_has_children {
+  display: block;
+}
+.site-map-page ul > li.page_item_has_children ul {
+  display: block;
+}
+.site-map-page ul li li.page_item_has_children {
+  display: inline-block;
+}
+
+.site-map-page ul li li.page_item_has_children ul {
+  display: inline-block;
+}
+
+.site-map-page ul > li.page_item_has_children ul a {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.site-map-page ul li li:before {
+  content: "";
+  background-color: #4179ba;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  top: -3px;
+  left: -5px;
+}
+
+.pdf-link {
+  display: none;
+}
+.has-pdf-link {
+  position: relative;
+  padding-right: 75px !important;
+}
+.has-pdf-link .pdf-link {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+
+/*.site-map-page  ul>li.page_item_has_children>a{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.site-map-page ul ul{
+    padding-left: 10px;
+}*/
+
+/*pagination*/
+.wp-pagenavi {
+  margin: 20px 0;
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+  padding: 4px 12px 5px;
+  display: inline-block;
+  margin-right: 5px;
+  color: #3e76b4;
+  font-size: 15px;
+  border: 1px solid #3e76b4;
+}
+.wp-pagenavi a:hover,
+.wp-pagenavi span.current {
+  background: #3e76b4;
+  color: #fff;
+  border-color: #3e76b4;
+}
+/*.wp-pagenavi a.nextpostslink:after{content: "\f101"; font-size: 22px; display: block; font-family:FontAwesome; color:#fff; font-weight: bold}
+.wp-pagenavi a.previouspostslink:after{content: "\f100"; font-size: 22px; display: block; font-family:FontAwesome; color:#fff; font-weight: bold}*/
+
+.event-location i {
+  display: none;
+}
+
+.flexslider .slides img {
+  width: auto !important;
+  margin: 0 auto;
+}
+.flex-direction-nav li {
+  position: inherit !important;
+}
+.flex-control-paging li {
+  margin: 0 5px !important;
+  padding: 0 !important;
+}
+.flex-direction-nav .flex-prev {
+  left: 0 !important;
+}
+.flex-direction-nav .flex-next {
+  right: 0 !important;
+}
+.flexslider {
+  background-color: transparent !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.sfsiaftrpstwpr,
+.sfsiplus_norm_row {
+  display: none !important;
+}
+.wp-caption-text {
+  font-size: 14px;
+  font-style: italic;
+  padding: 5px 0 0 !important;
+}
+
+@media (max-width: 767px) {
+  .banner .banner-overlay h1 {
+    margin-top: 20px;
+  }
+  .calendar-events,
+  .facts-figures,
+  .news-announcements,
+  .explore-haigazian,
+  .about-info {
+    padding: 30px 0;
+  }
+  .about-section {
+    padding: 20px 0;
+  }
+  .about-section .col-sm-4 {
+    margin-bottom: 20px;
+  }
+
+  .photo-gallery {
+    padding: 30px 0;
+  }
+  .photo-gallery h2 {
+    margin-bottom: 20px;
+  }
+  .photo-gallery p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.form-group {
+  margin-bottom: 15px !important;
+}
+
+.grecaptcha-badge { 
+    visibility: hidden;
+}

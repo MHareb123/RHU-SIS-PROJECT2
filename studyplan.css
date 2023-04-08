@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.classicArticle {
+    background-color: white;
+    border-top: 2px solid #734b6d;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 1%;
+    margin-bottom: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Bootstrap navbar edit*/
+.navbarOverride {
+    background-color: white !important;
+    padding: 0px;
+}
+
+.overrideLogo {
+    height: 100%;
+    max-width: 100%;
+}
+
+
+.navbar a {
+    margin-right: 20px;
+    height: 80px;
+    font-weight: bold;
+    color: #734b6d !important;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    text-align: center;
+    border-bottom: 5px solid #734b6d;
+    border-top: 5px solid white;
+}
+
+.navbar-brand:hover {
+    border-bottom: 0px !important;
+    border-top: 0px !important;
+}
+
+.overrideToggler {
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    min-height: fit-content;
+    max-height: fit-content;
+    height: fit-content;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+@media(max-width: 473px) {
+    .navbarOverride {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+
+    .navbar-collapse {
+        margin-left: 10px;
+        align-self: flex-start;
+    }
+
+}
+
+@media(max-width:992px) {
+    .overrideNavItem {
+        margin: 0px !important;
+        padding: 0px !important;
+        padding-left: 10px !important;
+    }
+
+    .navbar-nav {
+        padding: 0px;
+        padding: 0px;
+    }
+}
+
+
+table{
+    margin: 0 auto;
+  }
+  thead{
+    background-color: #734b6d;
+    color: white;
+    align-items: center;
+    text-align: center;
+  }
+  /* .yearsemester{
+    background-color: #8c6a87;
+    color: white;
+  } */
+td{
+    text-align: center;
+}
+  .credits{
+    display: flex;
+    justify-content: space-between;
+  }
+  .credits h3 {
+    margin-left: 350px;
+  }
+  

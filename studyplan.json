@@ -1,0 +1,278 @@
+[
+  {
+    "Coursecode": " COSC 214",
+    "Title": " Introduction to Programming",
+    "Credits": 3,
+    "Prerequisites": "-"
+  },
+  {
+    "Coursecode": " Year 1, Semester 1 (16 Credits)",
+    "Title": " ",
+    "Credits": " ",
+    "Prerequisites": ""
+  },
+  {
+    "Coursecode": "COSC 351 ",
+    "Title": " Logic Design",
+    "Credits": 3,
+    "Prerequisites": " -"
+  },
+
+  {
+    "Coursecode": "ENGL 210",
+    "Title": "English Composition and Rhetoric",
+    "Credits": 2,
+    "Prerequisites": "Placement"
+  },
+  {
+    "Coursecode": " MATH 211 ",
+    "Title": "Calculus III ",
+    "Credits": 4,
+    "Prerequisites": "- "
+  },
+
+  {
+    "Coursecode": " ",
+    "Title": "Natural Sciences and Technology Elective ",
+    "Credits": 3,
+    "Prerequisites": "- "
+  },
+  {
+    "Coursecode": " Year 1, Semester 2 (16 Credits)",
+    "Title": " ",
+    "Credits": " ",
+    "Prerequisites": ""
+  },
+  {
+    "Coursecode": "COSC 215 ",
+    "Title": " Advanced Programming and Data Structures",
+    "Credits": 3,
+    "Prerequisites": "COSC 214 "
+  },
+
+  {
+    "Coursecode": "COSC 231 ",
+    "Title": "Database Management Systems ",
+    "Credits": 3,
+    "Prerequisites": " COSC 214"
+  },
+
+  {
+    "Coursecode": " COSC 351L",
+    "Title": "Logic Design Lab 1",
+    "Credits": 1,
+    "Prerequisites": " COSC 351"
+  },
+
+  {
+    "Coursecode": " MATH 210",
+    "Title": "Discrete Mathematics",
+    "Credits": 3,
+    "Prerequisites": " -"
+  },
+
+  {
+    "Coursecode": " ENGL 217",
+    "Title": "Professional English Communication",
+    "Credits": 3,
+    "Prerequisites": " ENGL 210"
+  },
+
+  {
+    "Coursecode": " ARAB 212",
+    "Title": "Arabic Language and Communication",
+    "Credits": 2,
+    "Prerequisites": " -"
+  },
+
+  {
+    "Coursecode": " CMNS 200",
+    "Title": "Etiquette",
+    "Credits": 1,
+    "Prerequisites": " Co-req.: ENGL 210"
+  },
+  {
+    "Coursecode": " Summer Session (3 Credits)",
+    "Title": " ",
+    "Credits": " ",
+    "Prerequisites": ""
+  },
+  {
+    "Coursecode": " ",
+    "Title": "Humanities/Fine Arts Elective",
+    "Credits": 3,
+    "Prerequisites": " -"
+  },
+  {
+    "Coursecode": " Year 2, Semester 1 (16 Credits)",
+    "Title": " ",
+    "Credits": " ",
+    "Prerequisites": ""
+  },
+  {
+    "Coursecode": "COSC 316",
+    "Title": "Design and Analysis of Algorithms",
+    "Credits": 3,
+    "Prerequisites": " COSC 215"
+  },
+
+  {
+    "Coursecode": " COSC 333",
+    "Title": "Web Programming",
+    "Credits": 3,
+    "Prerequisites": " -"
+  },
+
+  {
+    "Coursecode": " COSC 360",
+    "Title": "Networking",
+    "Credits": 3,
+    "Prerequisites": "COSC 214"
+  },
+
+  {
+    "Coursecode": "COSC 360L",
+    "Title": "Networking Lab 1",
+    "Credits": 1,
+    "Prerequisites": " Co-req,: COSC 360"
+  },
+
+  {
+    "Coursecode": "MATH 351",
+    "Title": "Probability and Statistics",
+    "Credits": 3,
+    "Prerequisites": "MATH 211"
+  },
+
+  {
+    "Coursecode": " ",
+    "Title": "Social Science/Culture Elective I",
+    "Credits": 3,
+    "Prerequisites": " -"
+  },
+  {
+    "Coursecode": " Year 2, Semester 2 (15 Credits)",
+    "Title": " ",
+    "Credits": " ",
+    "Prerequisites": ""
+  },
+  {
+    "Coursecode": " MATH 311",
+    "Title": "Linear Algebra",
+    "Credits": 3,
+    "Prerequisites": " -"
+  },
+
+  {
+    "Coursecode": " COSC 341",
+    "Title": "Software Engineering",
+    "Credits": 3,
+    "Prerequisites": "COSC 214"
+  },
+
+  {
+    "Coursecode": "BMKA 200 ",
+    "Title": "Introduction to Marketing",
+    "Credits": 3,
+    "Prerequisites": " ENGL 210"
+  },
+
+  {
+    "Coursecode": " ",
+    "Title": "CS Major Elective I",
+    "Credits": 3,
+    "Prerequisites": " -"
+  },
+
+  {
+    "Coursecode": " ",
+    "Title": "CS Major Elective II",
+    "Credits": 3,
+    "Prerequisites": " -"
+  },
+  {
+    "Coursecode": " Summer Session (1 Credit)",
+    "Title": " ",
+    "Credits": " ",
+    "Prerequisites": ""
+  },
+  {
+    "Coursecode": "COSC 399",
+    "Title": "Co-op Training Experience",
+    "Credits": 1,
+    "Prerequisites": " ENGL 217; Senior Standing"
+  },
+  {
+    "Coursecode": " Year 3, Semester 1 (15 Credits)",
+    "Title": " ",
+    "Credits": " ",
+    "Prerequisites": ""
+  },
+
+  {
+    "Coursecode": " COSC 333",
+    "Title": "Computer Organization",
+    "Credits": 3,
+    "Prerequisites": " COSC 351"
+  },
+
+  {
+    "Coursecode": "COSC 451 ",
+    "Title": "Operating Systems",
+    "Credits": 3,
+    "Prerequisites": "COSC 214"
+  },
+
+  {
+    "Coursecode": "GRDS 440 ",
+    "Title": "Design and Social Impact",
+    "Credits": 3,
+    "Prerequisites": " Junior Standing"
+  },
+
+  {
+    "Coursecode": "COSC 421",
+    "Title": "Theory of Computation",
+    "Credits": 3,
+    "Prerequisites": "MATH 210 "
+  },
+
+  {
+    "Coursecode": " ",
+    "Title": "Social Sciences/Culture Elective II",
+    "Credits": 3,
+    "Prerequisites": " -"
+  },
+  {
+    "Coursecode": " Year 3, Semester 2 (12 Credits)",
+    "Title": " ",
+    "Credits": " ",
+    "Prerequisites": ""
+  },
+  {
+    "Coursecode": " BMGT 300",
+    "Title": "Project Management",
+    "Credits": 3,
+    "Prerequisites": "Junior Standing "
+  },
+  {
+    "Coursecode": "COSC 490",
+    "Title": "Summative Learning Experience",
+    "Credits": 3,
+    "Prerequisites": "ENGL 217 "
+  },
+
+  {
+    "Coursecode": "MATH 421",
+    "Title": "Numerical Analysis",
+    "Credits": 3,
+    "Prerequisites": "MATH 311 "
+  },
+
+  {
+    "Coursecode": "",
+    "Title": "CS Major Elective III",
+    "Credits": 3,
+    "Prerequisites": "-"
+  }
+]

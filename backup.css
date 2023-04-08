@@ -1,0 +1,1018 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.classicArticle {
+    background-color: white;
+    border-top: 2px solid #734b6d;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 1%;
+    margin-bottom: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Bootstrap navbar edit*/
+.navbarOverride {
+    background-color: white !important;
+    padding: 0px;
+}
+
+.overrideLogo {
+    height: 100%;
+    max-width: 100%;
+}
+
+
+.navbar a {
+    margin-right: 20px;
+    height: 80px;
+    font-weight: bold;
+    color: #734b6d !important;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    text-align: center;
+    border-bottom: 5px solid #734b6d;
+    border-top: 5px solid white;
+}
+
+.navbar-brand:hover {
+    border-bottom: 0px !important;
+    border-top: 0px !important;
+}
+
+.overrideToggler {
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    min-height: fit-content;
+    max-height: fit-content;
+    height: fit-content;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+@media(max-width: 473px) {
+    .navbarOverride {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+
+    .navbar-collapse {
+        margin-left: 10px;
+        align-self: flex-start;
+    }
+
+}
+
+@media(max-width:992px) {
+    .overrideNavItem {
+        margin: 0px !important;
+        padding: 0px !important;
+        padding-left: 10px !important;
+    }
+
+    .navbar-nav {
+        padding: 0px;
+        padding: 0px;
+    }
+}
+
+/*footer*/
+footer {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+#footerSocials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footerSocials img {
+    width: 25px;
+    height: 25px;
+}
+
+#footerSocials p {
+    text-align: center;
+}
+
+footer>p {
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+
+/*Login Page*/
+#loginNav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    border-bottom: lightgray solid 1px;
+    flex-shrink: 20;
+    width: 100%;
+}
+
+#loginNav img {
+    top: 0;
+    right: 0;
+    height: 70px;
+    min-width: 0;
+}
+
+#loginBody {
+    margin: 0;
+    padding: 0;
+    background:
+        linear-gradient(to top, #482d5f 0%, #734b6d 5%, rgba(0, 0, 0, 0.05) 100%),
+        url('images/campus.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#loginSocials {
+    margin-left: auto;
+    margin: 10px;
+}
+
+#loginSocials img {
+    width: 20px;
+    height: 20px;
+}
+
+#loginSocials img:hover {
+    outline: #734b6d 2px solid;
+}
+
+.loginDesign {
+    border-top: 3px solid #734b6d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.loginDesign h1 {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.loginDesign form,
+#loginDesignHeader {
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #734b6d;
+    transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px;
+    color: #734b6d;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%;
+}
+
+.loginForgotPassword {
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.loginForgotPassword:hover {
+    text-decoration: underline;
+}
+
+.loginDesign input[type="button"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #734b6d;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.loginDesign input[type="button"]:hover {
+    border-color: #52354d;
+    transition: .5s;
+}
+
+#loginDesignHeader p {
+    color: red;
+    font-size: 13px;
+}
+
+#btnLogin {
+    margin-bottom: 30px;
+}
+
+#loginHeader {
+    width: 100%;
+}
+
+
+
+/*Homepage*/
+
+#bodyHomepage {
+    background-color: rgb(247, 247, 247);
+}
+
+#homepageSlideshow {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+    width: 95%;
+    padding-bottom: 5px;
+    border-bottom: 2px #734b6d solid;
+}
+
+/*Homepage slideshow bootstrap*/
+
+.carousel-item img {
+    border-radius: 3%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23734b6d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23734b6d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/*Homepage main*/
+
+#homepageMainSection {
+    display: flex;
+    flex-direction: flex-start;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+#homepageMainSection #rightOfAside {
+    width: 80%;
+}
+
+#homepageMainSection aside {
+    width: 20%;
+}
+
+.homepageProfileContainer {
+    background-color: white;
+    border-top: #734b6d 2px solid;
+    border-radius: 3%;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepageProfileContainer img {
+    object-fit: fill;
+    border-radius: 100%;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 15px;
+}
+
+.homepageProfileContainer p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#homepageProfileFirstP {
+    color: #734b6d;
+    font-weight: bold;
+}
+
+#homepageProgressCredits {
+    padding: 0px;
+    border: 1px solid #EAEAEA;
+    border-radius: 13px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    height: 20px;
+}
+
+#homepageProgressCredits p {
+    font-size: 12px;
+    text-align: end;
+    padding-right: 10px;
+    min-height: 100%;
+}
+
+
+#homepageProgressCredits>div {
+    background-color: #734b6d;
+    width: 55%;
+    border-radius: 13px;
+    color: white;
+
+}
+
+#homepageMainSection article h3 {
+    color: #734b6d;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card-img-top {
+    height: 350px;
+}
+
+.homepageReadMore {
+    color: blue;
+    text-decoration: underline;
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+#homepageMainSection .classicArticle {
+    height: fit-content;
+}
+
+#homepageMainSection .classicArticle h4 {
+    color: #734b6d;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#homepageMainSection .card-deck {
+    margin-bottom: 20px;
+
+}
+
+#homepageMainSection .card {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hiddenCard {
+    display: none !important;
+}
+
+@media(max-width: 1200px) {
+    #homepageMainSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
+
+    .homepageProfileContainer {
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+
+    #homepageMainSection aside {
+        width: 80%;
+    }
+
+    #homepageCalendarContainer {
+        margin-right: 0px;
+        min-width: 100%;
+    }
+
+}
+
+@media(max-width: 400px) {
+    #rightOfAside .card-img-top {
+        height: 200px;
+    }
+}
+
+@media(max-width: 900px) {
+    .card-deck {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+#homepageNewsButtons,
+#registerbtns {
+    display: flex;
+    justify-content: center;
+}
+
+#homepageNewsButtons button,
+#registerbtns button {
+    background-color: white;
+    border: 0.5px solid #734b6d;
+    padding: 10px;
+    width: 40px;
+}
+
+#homepageNewsButtons button:hover,
+#registerbtns button:hover {
+    background-color: #EAEAEA;
+}
+
+#homepageNewsButtons button:active,
+#homepageNewsButtons button:focus,
+#registerbtns button:active,
+#registerbtns button:focus {
+    outline: none;
+}
+
+
+.homepageHidden {
+    display: none !important;
+}
+
+.homepageActivated {
+    background-color: #EAEAEA !important;
+}
+
+
+
+
+
+/*Homepage Shortcuts */
+#homepageShortcutsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.homepageShortcut {
+    margin-right: 10px;
+    max-width: 15%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 23px;
+}
+
+.homepageShortcut p {
+    font-size: 14px;
+}
+
+.homepageShortcut img {
+    width: 75px;
+    height: 75px;
+}
+
+#homepageLogoShortcutRHU {
+    border-radius: 100%;
+}
+
+@media(max-width: 570px) {
+    .homepageShortcut {
+        max-width: 33%;
+        width: 33%;
+    }
+}
+
+
+/*Calendar for Homepage*/
+#homepageCalendarContainer {
+    padding: 0px !important;
+    width: 90%;
+    background: white;
+    border-top: 2px solid #734b6d;
+    border-radius: 3%;
+    margin-bottom: 20px;
+}
+
+#homepageCalendar {
+    border-radius: 50% !important;
+}
+
+#homepageCalendar ul {
+    list-style-type: none;
+}
+
+#homepageCalendar .homepageMonth {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 3%;
+    text-align: center;
+}
+
+#homepageCalendar .homepageMonth ul {
+    margin: 0;
+    padding: 0;
+}
+
+#homepageCalendar .homepageMonth ul li {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#homepageCalendar .prev {
+    padding-top: 10px;
+    float: left;
+    color: #734b6d !important;
+    padding-left: 10px;
+}
+
+#homepageCalendar .next {
+    padding-top: 10px;
+    float: right;
+    color: #734b6d !important;
+    padding-right: 10px;
+}
+
+#homepageCalendar .homepageWeekdays {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0px;
+    padding-left: 20px;
+}
+
+#homepageCalendar .homepageWeekdays li {
+    display: inline-block;
+    width: 12%;
+    color: #666;
+    text-align: center;
+}
+
+#homepageCalendar .homepageDays {
+    padding: 10px 0;
+    margin: 0;
+    padding-left: 20px;
+}
+
+#homepageCalendar .homepageDays li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.homepageDays .active {
+    background: #EAEAEA !important;
+    color: BLACK !important;
+    cursor: help;
+}
+
+.homepageDays .todayActive {
+    outline: 1px solid #734b6d;
+}
+
+#homepageUpcomingEvents p {
+    margin-top: 10px;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+#homepageUpcomingEvents p:first-child {
+    padding-left: 0px !important;
+    text-align: center;
+    color: #734b6d;
+    font-weight: bold;
+}
+
+#homepageUpcomingEvents p:last-child {
+    padding-bottom: 20px !important;
+}
+
+
+@media(max-width: 1200px) {
+    .homepageDays .active {
+        background: #EAEAEA !important;
+        color: BLACK !important;
+    }
+}
+
+
+
+/*GPA Page*/
+
+#gpaMainContainer table th {
+    border-bottom: 1px solid #734b6d;
+}
+
+.gpaGradeTableGrades {
+    display: flex;
+}
+
+.gpaGradeTableGrades b {
+    color: #734b6d;
+}
+
+.gpaGradeTableGrades p {
+    margin-Left: 10px;
+    margin-right: 10px;
+}
+
+
+#gpaMainContainer {
+    margin: 40px;
+}
+
+#gpaMainContainer h4,
+#gpaCalculator h4 {
+    color: #734b6d;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#gpaMainContainer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#gpaMainContainer>section>div {
+    flex: 2 1 auto;
+    margin-right: 40px;
+}
+
+
+#gpaAside th {
+    text-align: left;
+}
+
+#gpaAside td:not(:last-child),
+#gpaAside th:not(:last-child) {
+    border-right: 1px solid #734b6d;
+}
+
+#gpaAside td,
+#gpaAside th {
+    padding: 2px;
+}
+
+#gpaAside tr:nth-child(even) {
+    background-color: #EAEAEA;
+}
+
+#gpaAside table {
+    margin: 0 auto;
+}
+
+
+/*gpa gpacalculator*/
+
+.gpaOneSemester {
+    border: 1px solid #EAEAEA;
+    margin-bottom: 40px;
+}
+
+.gpaSemesterHeader {
+    background: #734b6d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.gpaSemesterHeader h3 {
+    color: white;
+}
+
+.gpaSemesterHeader button {
+    background-color: #734b6d;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.gpaSemesterHeader button:last-child:hover {
+    font-weight: bold;
+    color: red;
+}
+
+.gpaSemesterHeader button:first-child:hover {
+    font-weight: bold;
+    color: green;
+}
+
+.gpaSemesterHeader button:focus {
+    border: none;
+    outline: none;
+}
+
+.gpaSemesterInputsLine {
+    padding: 20px 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.gpaSemesterInputsLineOneObject {
+    display: flex;
+}
+
+.gpaSemesterInputsLineOneObject input {
+    padding-left: 10px;
+    width: 100px;
+}
+
+.gpaSemesterInputsLineOneObject input,
+.gpaSemesterInputsLineOneObject h5 {
+    margin-right: 20px;
+}
+
+.gpaSemesterInputsLineControls button {
+    background-color: white;
+    border: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.gpaSemesterInputsLineControls button:last-child:hover {
+    font-weight: bold;
+    color: red;
+}
+
+.gpaSemesterInputsLineControls button:first-child:hover {
+    font-weight: bold;
+    color: green;
+}
+
+.gpaSemesterInputsLineControls button:focus {
+    border: none;
+    outline: none;
+}
+
+.gpaSemesterInputsLineControls button:active {
+    color: white;
+}
+
+.gpaSemesterFooter,
+.gpaCalculatorFooter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.gpaSemesterFooter button,
+#btnOverallGPA {
+    margin-right: 20px;
+    border: none;
+    background-color: #734b6d;
+    color: white;
+    padding: 10px;
+}
+
+.gpaSemesterFooter button:hover,
+#articleCalculator #btnOverallGPA:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.gpaSemesterFooter h5,
+.gpaCalculatorFooter h5 {
+    border: 1px solid #EAEAEA;
+    padding: 10px;
+}
+
+
+@media(max-width: 992px) {
+    #gpaMainContainer section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gpaMainContainer>section>div {
+        flex: 0 1 auto;
+        margin-right: 0;
+    }
+}
+
+
+@media(max-width: 570px) {
+    #gpaMainContainer section {
+        flex: 0 1 auto;
+    }
+
+    #gpaMainContainer section #gpaContaineridk {
+        max-width: 100%;
+    }
+
+    .gpaSemesterInputsLine {
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .gpaSemesterInputsLineOneObject {
+        margin-bottom: 20px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gpaSemesterInputsLineControls {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .gpaSemesterInputsLineControls button {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+}
+
+.gpaSemesterInputs input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.gpaSemesterInputs input {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+#gpaGradeSelect {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+#gpaGradeSelect:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+
+
+
+
+
+/* Course Registration Page*/
+#bodyRegister {
+    background-color: rgb(247, 247, 247);
+}
+
+#bodyRegister section {
+    margin: 40px 20px;
+}
+
+#registerTable td:nth-child(3) {
+    width: 10%;
+    max-width: 12%;
+}
+
+.table-responsive {
+    margin-bottom: 20px;
+}
+
+#gpaMainContainer table tr:nth-child(even),
+#registerTable table tr:nth-child(even) {
+    background-color: rgb(247, 247, 247);
+    ;
+}
+
+#gpaMainContainer .gpaGradeTableContainer th,
+#registerTable th {
+    font-weight: bold;
+    color: white;
+}
+
+#gpaMainContainer .gpaGradeTableContainer thead,
+#registerTable thead {
+    background-color: #734b6d;
+}
+
+#bodyRegister section {
+    display: flex;
+}
+
+#bodyRegister section article:first-child {
+    max-width: 25%;
+    width: 25%;
+    margin-right: 40px;
+}
+
+#bodyRegister section article:last-child {
+    min-width: 75%;
+    width: 75;
+}
+
+#registerControls .btn {
+    background-color: #734b6d;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+#registerControls .btn:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#registerControls .btn:focus {
+    border: none !important;
+    box-shadow: none !important;
+}

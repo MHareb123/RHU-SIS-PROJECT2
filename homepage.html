@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="bodyHomepage">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbarOverride">
+        <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" alt="RHU" class="overrideLogo"></a>
+
+        <button class="navbar-toggler overrideToggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="homepage.html">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle overrideNavItem" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Academics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="gpa.html">GPA</a>
+                        <a class="dropdown-item" href="studyplan.html">Study Plan</a>
+                        <a class="dropdown-item" href="courseregistration.html">Course Registration</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="files2.html">Files</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link overrideNavItem" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="homepageSlideshow">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/slideshow1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slideshow2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slideshow3.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slideshow4.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slideshow5.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="homepageMainSection">
+        <aside>
+            <div class="homepageProfileContainer">
+                <div class="homepageProfile">
+                    <img src="images/profileimg.jpg" class="profileimg" />
+                    <p id="homepageProfileFirstP">Lara Mosby</p>
+                    <p>20202020</p>
+                    <p>Computer Science</p>
+                    <p>CGPA: 3.85</p>
+                    <p style="margin-bottom:10px;">Credits:</p>
+                    <div id="homepageProgressCredits">
+                        <div>
+                            <p>51</p>
+                        </div>
+                        <p>93</p>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div id="homepageCalendarContainer">
+                <div id="homepageCalendar">
+                    <div class="homepageMonth">
+                        <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li>March<br><span style="font-size:16px">2023</span></li>
+                        </ul>
+                    </div>
+                    <ul class="homepageWeekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                    </ul>
+
+                    <ul class="homepageDays">
+                        <li style="color:lightgray;">27</li>
+                        <li style="color:lightgray;">28</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li class="active" data-toggle="tooltip" data-placement="top"
+                            title="Beginning of advising week">13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li class="active" data-toggle="tooltip" data-placement="top"
+                            title="End of advising week | Last day to withdraw from courses">17</li>
+                        <li>18</li>
+                        <li class="todayActive active" data-toggle="tooltip" data-placement="top" title="Today">19</li>
+                        <li class="active" data-toggle="tooltip" data-placement="top"
+                            title="First day of registration week">20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li class="active" data-toggle="tooltip" data-placement="top" title="Annunciation holiday">25
+                        </li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li class="active" data-toggle="tooltip" data-placement="top"
+                            title="Last day of registration week">28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                        <li style="color:lightgray;">1</li>
+                        <li style="color:lightgray;">2</li>
+                    </ul>
+                </div>
+
+                <div id="homepageUpcomingEvents">
+                    <p>Timeline: </p>
+                    <p><b>March 20:</b> First day of registration week</p>
+                    <p><b>March 25:</b> Annunciation Holiday</p>
+                    <p><b>March 28:</b> Last day of registration week</p>
+                </div>
+            </div>
+        </aside>
+
+        <div id="rightOfAside">
+            <article class="classicArticle">
+                <h4>Announcements and News</h4>
+                <div class="card-deck">
+                    <div class="card cardFirst">
+                        <img class="card-img-top" src="images/advising.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text homepageDate"><small class="text-muted">3/17/2023</small></p>
+                            <h5 class="card-title">Reminder: Advising and Registration Periods for Summer and Fall 2023
+                            </h5>
+                            <p class="card-text">This is to inform you that the online course registration for the
+                                Summer
+                                and Fall 2023 semesters will take place according to the following schedule:</p>
+                            <a href="#" class="homepageReadMore">Read More...</a>
+                        </div>
+                    </div>
+                    <div class="card cardFirst">
+                        <img class="card-img-top" src="images/earthquake.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text homepageDate"><small class="text-muted">3/15/2023</small></p>
+                            <h5 class="card-title">Understanding Earthquakes and their Impacts Seminar</h5>
+                            <p class="card-text">On the behalf, ASCE_RHU student chapter invites you to attend a Seminar
+                                entitled “Understanding Earthquakes and their Impacts” held by the Dr. Mehedeen Machaka
+                            </p>
+                            <a href="#" class="homepageReadMore">Read More...</a>
+                        </div>
+                    </div>
+                    <div class="card cardFirst">
+                        <img class="card-img-top" src="images/ramadan.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text homepageDate"><small class="text-muted">3/13/2023</small></p>
+                            <h5 class="card-title">Join us for "Ramadan Gathers Us" and Support Small Businesses</h5>
+                            <p class="card-text">As part of our mission to support and give back to the community, we
+                                are
+                                excited to announce our upcoming event, "Ramadan Unites Us!</p>
+                            <a href="#" class="homepageReadMore">Read More...</a>
+                        </div>
+                    </div>
+                    <div class="card cardSecond homepageHidden">
+                        <img class="card-img-top" src="images/connectWorld.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text homepageDate"><small class="text-muted">3/11/2023</small></p>
+                            <h5 class="card-title">Invitation to Attend Connecting the World with Intelligence
+                            </h5>
+                            <p class="card-text">The RHU-IEEE Student Branch would like to invite you to an upcoming
+                                workshop on enterprise security challenges that will be presented by Alumnus Ahmad
+                                Ramadan
+                            </p>
+                            <a href="#" class="homepageReadMore">Read More...</a>
+                        </div>
+                    </div>
+                    <div class="card cardSecond homepageHidden">
+                        <img class="card-img-top" src="images/economy.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text homepageDate"><small class="text-muted">3/9/2023</small></p>
+                            <h5 class="card-title">Is our Economy Heading towards The Great Fallout?</h5>
+                            <p class="card-text">"The Future of The Lebanese Lira and The Fate Of The Deposits"
+                                Lebanon is undergoing one of the biggest crises it has faced since the end of the civil
+                                war
+                            </p>
+                            <a href="#" class="homepageReadMore">Read More...</a>
+                        </div>
+                    </div>
+                    <div class="card cardSecond homepageHidden">
+                        <img class="card-img-top" src="images/bakesale.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text homepageDate"><small class="text-muted">3/7/2023</small></p>
+                            <h5 class="card-title">Students Hosting A Bake Sale in the Green Field</h5>
+                            <p class="card-text">On behalf of ASCE_RHU student Chapter invite you to be part of the bake
+                                sale held on Thursday 16th March near the cafeteria from 11:00 am to 12:00 pm</p>
+                            <a href="#" class="homepageReadMore">Read More...</a>
+                        </div>
+                    </div>
+                    <div class="card cardThird homepageHidden">
+                        <img class="card-img-top" src="images/future.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text homepageDate"><small class="text-muted">3/5/2023</small></p>
+                            <h5 class="card-title">Competition: What Will Our Future Look Like?</h5>
+                            <p class="card-text">The RHU Communication and Alumni Relations Office, Coop, and Career
+                                Services will help answer this question during the Careers of the Future seminar.</p>
+                            <a href="#" class="homepageReadMore">Read More...</a>
+                        </div>
+                    </div>
+                    <div class="card cardThird homepageHidden">
+                        <img class="card-img-top" src="images/shortstory.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text homepageDate"><small class="text-muted">3/3/2023</small></p>
+                            <h5 class="card-title">Short story contest: The Lebanon of our dreams</h5>
+                            <p class="card-text">Inspired by a common purpose of the organizers to make the young
+                                generation
+                                dream and believe in a brighter future, he competition gives gives opportunities</p>
+                            <a href="#" class="homepageReadMore">Read More...</a>
+                        </div>
+                    </div>
+                    <div class="card cardThird homepageHidden">
+                        <img class="card-img-top" src="images/python.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text homepageDate"><small class="text-muted">3/1/2023</small></p>
+                            <h5 class="card-title">Workshop: Python Programming - from Beginner to Master </h5>
+                            <p class="card-text">This two-session series will take you from beginner to master, covering
+                                the
+                                basics of Python programming in the first session and advanced techniques in the second
+                                session.</p>
+                            <a href="#" class="homepageReadMore">Read More...</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="homepageNewsButtons">
+                    <button id="homepagebtnOne" class="homepageActivated">1</button>
+                    <button id="homepagebtnTwo">2</button>
+                    <button id="homepagebtnThree">3</button>
+                </div>
+            </article>
+
+            <article class="classicArticle">
+                <h4>Shortcut Links</h4>
+                <div id="homepageShortcutsContainer">
+                    <div class="homepageShortcut">
+                        <a href="https://www.rhu.edu.lb" target="_blank"><img src="images/logoRHU.PNG"
+                                id="homepageLogoShortcutRHU" alt="rhuwebsite"></a>
+                        <p>Website</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href="https://www.moodle.rhu.edu.lb" target="_blank"><img src="images/moodlelogo.png"
+                                alt="moodle"></a>
+                        <p>Moodle</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href="https://www.outlook.com" target="_blank"><img src="images/emaillogo.png"
+                                alt="email"></a>
+                        <p>Email</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href=""><img src="images/logoStatement.png" alt="fees"></a>
+                        <p>Statement of Fees</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href=""><img src="images/logoFees.png" alt="fees"></a>
+                        <p>Fees and Expenses</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href=""><img src="images/logoSchedule.png" alt="Schedule"></a>
+                        <p>Class Schedule</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href="https://www.rhu.edu.lb/academics/course-offerings" target="_blank"><img
+                                src="images/logoOfferings.png" alt="offerings"></a>
+                        <p>Course Offerings</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href=""><img src="images/logoGPA.png" alt="GPA"></a>
+                        <p>Your GPA</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href=""><img src="images/logoTranscript.png" alt="transcript"></a>
+                        <p>Your Transcript</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href="https://www.rhu.edu.lb/academics/student-catalog" target="_blank"><img
+                                src="images/logoCatalog.png" alt="catalog"></a>
+                        <p>Student Catalog</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href="https://www.rhu.edu.lb/academics/student-catalog" target="_blank"><img
+                                src="images/logoPlan.png" alt="plan"></a>
+                        <p>Student Plan</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href="https://www.rhu.edu.lb/academics/final-examination" target="_blank"><img
+                                src="images/logoFinals.png" alt="plan"></a>
+                        <p>Finals Schedule</p>
+                    </div>
+                    <div class="homepageShortcut">
+                        <a href="https://www.rhu.edu.lb/rhu-library" target="_blank"><img src="images/logoLibrary.png"
+                                alt="plan"></a>
+                        <p>Library</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <p>Rafik Hariri University &copy2023 All rights reserved </p>
+        <div id="footerSocials">
+            <p>Follow Us On</p>
+            <div>
+                <a href="https://www.linkedin.com/school/rafik-hariri-university/" target="_blank"><img
+                        src="images/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/rhu.lebanon/" target="_blank"><img src="images/instagram.png"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
